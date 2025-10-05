@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">
+        nomber1: <input id="nbr1">
+    </label>
+    <br>
+    <label for="">
+        nomber2: <input id="nbr2">
+    </label>
+    <br>
+    <span>=</span><br>
+    <input type="button" value="result" onclick="somme()">
+    <br><br>
+    <p id="P1"></p>
+    <script>
+        function somme(){
+            let x1=document.getElementById("nbr1").value
+            let x2=document.getElementById("nbr2").value
+          
+            document.getElementById("P1").textContent=parseInt(x1)+parseInt(x2)
+
+        }
+    </script>
+</body>
+</html>
